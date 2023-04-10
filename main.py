@@ -47,14 +47,12 @@ def km_to_mile():
     km = float(entry.get())
     result = round(km*0.621371192,2)
     ml_result_label.config(text=result, font=("Arial", 14, "normal"), fg='navy', bg='white')
-    # print(ml_distance)
 
-# km_to_mile(entry_input)
 convert_button = Button(text="CALCULATE", command=km_to_mile)
 convert_button.grid(row=3, column=1)
 convert_button.config(padx=70, pady=5, bg='navy', fg='white',font=("Arial", 12, "bold"))
 
 
 
-######Aplication loop#############
+#########Application loop#############
 window.mainloop()
